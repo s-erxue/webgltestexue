@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - Lava
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -58,6 +58,7 @@ public class Player : MonoBehaviour
         Lives--;
         if (Lives == 0)
         {
+            GameVariables.IsGameOver = true;
             SceneManager.LoadSceneAsync("GameOverScene");
         }
     }
