@@ -1136,6 +1136,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall
       objectReference: {fileID: 0}
+    - target: {fileID: 2590151474593974394, guid: eae9ea090d3a603489ef20676d0b761c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 2590151474593974394, guid: eae9ea090d3a603489ef20676d0b761c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 2590151474593974394, guid: eae9ea090d3a603489ef20676d0b761c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.49803922
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eae9ea090d3a603489ef20676d0b761c, type: 3}
 --- !u!1001 &2060696478977329164

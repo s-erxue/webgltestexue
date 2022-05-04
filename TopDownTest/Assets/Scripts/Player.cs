@@ -1,9 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 using TMPro;
 
 public class Player : MonoBehaviour
 {
+    private TextMeshProUGUI coinsText;
+    private TextMeshProUGUI livesText;
+
     private int _coins = 0;
     private int _lives = 5;
 
@@ -12,7 +16,7 @@ public class Player : MonoBehaviour
         get => _coins;
         set
         {
-            GameObject.Find("Coin Text").GetComponent<TextMeshProUGUI>().text = $"Coins: {value}";
+            coinsText.text = $"Coins: {value}";
             _coins = value;
         }
     }
@@ -21,9 +25,15 @@ public class Player : MonoBehaviour
         get => _lives;
         set
         {
-            GameObject.Find("Lives Text").GetComponent<TextMeshProUGUI>().text = $"Lives: {value}";
+            livesText.text = $"Lives: {value}";
             _lives = value;
         }
+    }
+
+    private void Start()
+    {
+        coinsText = GameObject.Find("Coin Text").GetComponent<TextMeshProUGUI>();
+        livesText = GameObject.Find("Lives Text").GetComponent<TextMeshProUGUI>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
